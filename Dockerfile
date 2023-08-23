@@ -11,6 +11,6 @@ COPY . /app/
 #
 FROM openjdk:17-alpine
 WORKDIR /app
-ADD C:/WebDev/Movies_API/BackEnd_SpringBoot/movies/targe/movies-0.0.1-SNAPSHOT.jar app.jar
+ADD target/movies-0.0.1-SNAPSHOT.jar /app/app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","app.jar"]
